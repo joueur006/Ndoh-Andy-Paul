@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos des matchs d'Andy</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleandy.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .season {
+            margin-bottom: 20px;
+        }
+        .season h2 {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .photos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .photo {
+            margin: 10px;
+            border: 1px solid #ddd;
+            padding: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .photo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .photo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .photo:hover img {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Photos des matchs d'Andy</h1>
+
+    <div class="season">
+        <h2>Saison 2022-2023</h2>
+        <div class="photos">
+            <div class="photo">
+                <a href="images/andypic1.jpg" data-lightbox="season-2022-2023" data-title="Match 1">
+                    <img src="images/andypic1.jpg" alt="Match 1">
+                </a>
+                <p>Match 1</p>
+            </div>
+            <div class="photo">
+                <a href="images/andypic2.jpg" data-lightbox="season-2022-2023" data-title="Match 2">
+                    <img src="images/andypic2.jpg" alt="Match 2">
+                </a>
+                <p>Match 2</p>
+            </div>
+            <!-- Ajoutez plus de photos ici -->
+        </div>
+    </div>
+
+    <div class="season">
+        <h2>Saison 2021-2022</h2>
+        <div class="photos">
+            <div class="photo">
+                <a href="path/to/photo3.jpg" data-lightbox="season-2021-2022" data-title="Match 1">
+                    <img src="path/to/photo3.jpg" alt="Match 1">
+                </a>
+                <p>Match 1</p>
+            </div>
+            <div class="photo">
+                <a href="path/to/photo4.jpg" data-lightbox="season-2021-2022" data-title="Match 2">
+                    <img src="path/to/photo4.jpg" alt="Match 2">
+                </a>
+                <p>Match 2</p>
+            </div>
+            <!-- Ajoutez plus de photos ici -->
+        </div>
+    </div>
+
+    <!-- Ajoutez plus de saisons ici -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>
+<div class="season">
+    <h2>Galerie</h2>
+    <div class="photos">
+        <div class="photo">
+            <a href="images/andypic1.jpg" data-lightbox="gallery" data-title="Match 1">
+                <img src="images/andypic1.jpg" alt="Match 1">
+            </a>
+            <p>Match 1</p>
+        </div>
+        <div class="photo">
+            <a href="images/andypic2.jpg" data-lightbox="gallery" data-title="Match 2">
+                <img src="images/andypic2.jpg" alt="Match 2">
+            </a>
+            <p>Match 2</p>
+        </div>
+        <div class="photo">
+            <a href="path/to/photo3.jpg" data-lightbox="gallery" data-title="Match 3">
+                <img src="path/to/photo3.jpg" alt="Match 3">
+            </a>
+            <p>Match 3</p>
+        </div>
+        <div class="photo">
+            <a href="path/to/photo4.jpg" data-lightbox="gallery" data-title="Match 4">
+                <img src="path/to/photo4.jpg" alt="Match 4">
+            </a>
+            <p>Match 4</p>
+        </div>
+        <!-- Ajoutez plus de photos ici -->
+    </div>
+</div>
